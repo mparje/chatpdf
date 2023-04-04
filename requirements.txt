@@ -1,9 +1,10 @@
-urllib.request
-fitz
-re
-numpy
-tensorflow_hub
-openai
 streamlit
 os
-sklearn
+urllib3 
+fitz 
+numpy 
+tensorflow_hub 
+openai 
+gradio 
+scikit-learn
+
