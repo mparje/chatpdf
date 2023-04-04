@@ -96,24 +96,5 @@ def load_recommender(path, start_page=1):
     global recommender
     pdf_file = os.path.basename(path)
     embeddings_file = f"{pdf_file}_{start_page}.npy"
-# Crear elementos de entrada en la interfaz de Streamlit
-url = st.text_input("URL")
-file = st.file_uploader("Subir archivo")
-question = st.text_input("Pregunta")
-openAI_key = st.text_input("Clave de API de OpenAI", type="password")
 
-# Crear un botón para activar la función question_answer
-if st.button("Obtener respuesta"):
-    answer = question_answer(url, file, question, openAI_key)
-    st.write(answer)
-
-# Definir la función question_answer
-def question_answer(url, file, question, openAI_key):
-    # Aquí va la lógica para procesar la pregunta y obtener la respuesta
-    # utilizando la API de OpenAI
-    pass
-
-# Lanzar la aplicación de Streamlit
-st.title("Demo de Streamlit y OpenAI")
-    
    
